@@ -2,20 +2,17 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 26
-
-
-
     defaultConfig {
         applicationId "com.yunk.strikeballcounter"
         minSdkVersion 22
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
-
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-
     }
-
+    applicationVariants.all { variant ->
+        variant.resValue "string", "versionName", variant.versionName
+    }
     buildTypes {
         release {
             minifyEnabled false

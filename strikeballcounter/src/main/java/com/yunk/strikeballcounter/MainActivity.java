@@ -64,5 +64,37 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
+        getFoul.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (Integer.parseInt(strikeCount.getText().toString())<2) {
+                    int strike = Integer.parseInt(strikeCount.getText().toString());
+                    strike++;
+                    strikeCount.animateText(String.valueOf(strike));
+                }
+            }
+        });
+
+        getInPlay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (Integer.parseInt(outCount.getText().toString())<2) { //before 3 outs
+                    int out = Integer.parseInt(outCount.getText().toString());
+                    out++;
+                    outCount.animateText(String.valueOf(out));
+                } else {
+                    outCount.animateText("0");
+                }
+            }
+        });
+
+        getHit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                strikeCount.animateText("0");
+                ballCount.animateText("0");
+            }
+        });
     }
 }

@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/StupidCounter.iml" filepath="$PROJECT_DIR$/StupidCounter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Counter.iml" filepath="$PROJECT_DIR$/Counter.iml" />
+      <module fileurl="file://D:\AndroidStudioProjects\Counter\Counter\StupidCounter.iml" filepath="D:\AndroidStudioProjects\Counter\Counter\StupidCounter.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://D:\AndroidStudioProjects\Counter\Counter\app\app.iml" filepath="D:\AndroidStudioProjects\Counter\Counter\app\app.iml" />
       <module fileurl="file://$PROJECT_DIR$/strikeballcounter/strikeballcounter.iml" filepath="$PROJECT_DIR$/strikeballcounter/strikeballcounter.iml" />
+      <module fileurl="file://D:\AndroidStudioProjects\Counter\Counter\strikeballcounter\strikeballcounter.iml" filepath="D:\AndroidStudioProjects\Counter\Counter\strikeballcounter\strikeballcounter.iml" />
     </modules>
   </component>
 </project>
